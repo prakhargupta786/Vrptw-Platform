@@ -1,0 +1,35 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache / build
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Environment (keep .env.example: it is the template copied in setup)
+.env
+.env.*
+!.env.example
+
+# Tools
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Generated runs and exports (keep the folder)
+storage/runs/*
+!storage/runs/.gitkeep
+
+# Database dumps
+*.dump
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

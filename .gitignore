@@ -1,0 +1,49 @@
+# Repo-wide rules. backend/.gitignore and frontend/.gitignore add the per-app ones.
+
+# Environment files: never commit secrets. .env.example is the setup template, so keep it.
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.tsbuildinfo
+.vite/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+coverage/
+
+# Generated runs / exports (keep the folder)
+backend/storage/runs/*
+!backend/storage/runs/.gitkeep
+
+# Database dumps
+*.dump
+*.sql.gz
+
+# Logs
+*.log
+npm-debug.log*
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
